@@ -23,3 +23,8 @@ def dammi_ora():
 @app.get("/saluta")
 def saluta_utente(nome: str):
     return {"messaggio": f"Ciao {nome}, benvenuto nel server di Terza!"}
+
+@app.get("/somma")
+def somma_valori(a: int, b: int):
+    risultato = a + b
+    return {"risultato": risultato}

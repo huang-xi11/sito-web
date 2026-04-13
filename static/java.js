@@ -44,3 +44,10 @@ async function inviaSaluto() {
 // Colleghiamo i bottoni alle funzioni
 document.getElementById('btn-ora').addEventListener('click', aggiornaOra);
 document.getElementById('btn-saluto').addEventListener('click', inviaSaluto);
+
+// NUOVA FUNZIONE: Somma
+function somma(a, b) {
+    let risultato = a + b;
+    document.getElementById("risultato-somma").innerHTML = "Il risultato è: " + risultato;
+    return risultato;
+}
